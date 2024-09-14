@@ -1,9 +1,17 @@
 @import '../index.scss';
 
+.home{
+    display: flex;
+    
+}
+
+.blocApropos {
+    width: 40%;
+}
+
 .blocTitre{
    display: flex;
-   
-   width: 40%;
+   width: 100%;
 
    &__titre {
     font-size: 24px;  
@@ -23,18 +31,15 @@
 
 .blocBleu {
     background-color: $blue;
-    width: 40%;
+    width: 100%;
     position: relative;
     color: white;
     border-radius: 20px 0 20px 20px;
     padding: 3%;
     box-sizing: border-box;
-    //clip-path: polygon(0% 7%, 25% 7%, 40% 0%, 100% 0%, 100% 100%, 0 100%);
-
 
     &__titre {
         color: black;
-
     }
 
     &__image {
@@ -85,50 +90,83 @@
             justify-content:space-between;
             
             &__dev{
-                width: 30%;
+                width: 25%;
                 height: auto;
             }
-            
         }
 
         &__nom{
             margin: 0;
             font-weight: bold;
         }
-
-
-        
     }
-
-
-    
-
-    
-
-
 }
 
-/*.blocBleu::before {
-    content: "À propos";
-    display: block;
-    color: black;
+.blocMenu {
+    width: 60%;
     font-size: 24px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 25%;
-    height: 15%;
-    background-color: white;
-    border-bottom-right-radius: 20px;
-}*/
 
-/*.blocBleu::before {
-    content: "";
-    position: absolute;
-    top: 7%;
-    left: 0;
-    width: 25%;
-    height: 40px;
-    background-color: rgb(247, 35, 35);
-    border-top-left-radius: 20px;
-}*/
+    &__titre {
+        font-size: 128px;
+        margin: 0;
+    }
+
+    &__contenu1 {
+        display: flex;
+
+        &__image {
+            background-color: $vert;
+            border-radius: 20px;
+        }
+
+        &__blocs {
+            width: 100%;
+
+            &__gris {
+                background-color: $gris;
+                height: 50%;
+                border-radius: 20px 20px 0 0;
+                padding: $paddingBloc;
+                color: white;
+            }
+
+            &__bleu {
+                background-color: $blue;
+                height: 50%;
+                border-radius: 0 0 20px 20px;
+                padding: $paddingBloc;
+            }
+        }
+    }
+
+    &__contenu2 {
+        display: flex;
+        position: relative;
+
+        &__blocRose {
+            background-color: $rose;
+            border-radius: 20px;
+            width: 50%;
+            padding: $paddingBloc;
+        }
+
+        &__blocNoir {
+            background-color: black;
+
+            width: 50%;
+            border-radius: 20px;
+            
+        }
+
+        &__blocBeige {
+            background-color: $beige;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            border-radius: 20px;
+            padding: $paddingBloc;
+            box-sizing: border-box;
+        }
+    }
+}
