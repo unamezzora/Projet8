@@ -1,0 +1,134 @@
+@import '../index.scss';
+
+.blocTitre{
+   display: flex;
+   
+   width: 40%;
+
+   &__titre {
+    font-size: 24px;  
+    width: 30%;
+    padding: 5px 15px 10px 15px;
+   }
+
+   &__bloc {
+    width: 70%;
+    background-color: $blue;
+    clip-path: polygon(0 100%, 15% 0, 100% 0, 100% 100%);
+    border-top-right-radius: 20px;
+    position: relative;
+   }
+
+}
+
+.blocBleu {
+    background-color: $blue;
+    width: 40%;
+    position: relative;
+    color: white;
+    border-radius: 20px 0 20px 20px;
+    padding: 3%;
+    box-sizing: border-box;
+    //clip-path: polygon(0% 7%, 25% 7%, 40% 0%, 100% 0%, 100% 100%, 0 100%);
+
+
+    &__titre {
+        color: black;
+
+    }
+
+    &__image {
+        aspect-ratio: 1/0.9;
+
+
+
+
+        &__ellipseBlanche {
+        position: absolute;
+        top: 6%;
+        right: 6%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        width: 70%;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        border: 6px solid white;
+
+        } 
+
+        &__ellipseRose {
+            background-color: $rose;
+            
+            height: 90%;
+            width: 90%;
+            border-radius: 50%;
+        }
+
+        &__photo {
+        position: absolute;
+        top: 7%;
+        right: 14%;
+        width: 59%;
+        }
+
+    }
+
+    &__contenu {
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+
+        &__text{
+            display: flex;
+            justify-content:space-between;
+            
+            &__dev{
+                width: 30%;
+                height: auto;
+            }
+            
+        }
+
+        &__nom{
+            margin: 0;
+            font-weight: bold;
+        }
+
+
+        
+    }
+
+
+    
+
+    
+
+
+}
+
+/*.blocBleu::before {
+    content: "À propos";
+    display: block;
+    color: black;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 15%;
+    background-color: white;
+    border-bottom-right-radius: 20px;
+}*/
+
+/*.blocBleu::before {
+    content: "";
+    position: absolute;
+    top: 7%;
+    left: 0;
+    width: 25%;
+    height: 40px;
+    background-color: rgb(247, 35, 35);
+    border-top-left-radius: 20px;
+}*/
