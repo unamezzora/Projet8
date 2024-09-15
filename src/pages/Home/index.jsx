@@ -37,7 +37,7 @@ function Home() {
         </div>
       </div>
       <div className="blocMenu">
-        <h1 className="blocMenu__titre">Portfolio</h1>
+        <h1 className="blocMenu__titre">Portfolio˺</h1>
         <div className="blocMenu__contenu1">
           <img
             className="blocMenu__contenu1__image"

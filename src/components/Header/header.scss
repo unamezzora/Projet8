@@ -1,0 +1,18 @@
+@import '../../index.scss';
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: end;
+    
+    margin-right: 20px;
+    
+
+    &__link {
+        writing-mode: vertical-rl;
+        transform: scale(-1);
+        text-decoration: none;
+        font-size: 24px;
+    }
+}
