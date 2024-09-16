@@ -14,11 +14,18 @@ $paddingBloc: 15px;
 body {
     min-width: 320px;
     max-width: 1440px;
+    height: 100%;
     margin: auto;
     font-family: $principal-font-family;
     padding: 20px 20px;
 
 }
+
+html {
+    height: 100%;
+}
+
+
 
 .layout {
     display: flex;
