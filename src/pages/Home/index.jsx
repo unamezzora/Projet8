@@ -39,11 +39,10 @@ function Home() {
       <div className="blocMenu">
         <h1 className="blocMenu__titre">Portfolio˺</h1>
         <div className="blocMenu__contenu1">
-          <img
-            className="blocMenu__contenu1__image"
-            src={ordinateur}
-            alt="La conception WEB"
-          />
+          <div className="blocMenu__contenu1__image">
+            <img src={ordinateur} alt="La conception WEB" />
+          </div>
+
           <div className="blocMenu__contenu1__blocs">
             <div className="blocMenu__contenu1__blocs__gris">CV</div>
             <div className="blocMenu__contenu1__blocs__bleu">Contacts</div>
