@@ -146,7 +146,9 @@
         @media (max-width: 1024px) {
             font-size: 64px;
         }
-
+        @media (max-width: 768px) {
+            font-size: 40px;
+        }
         
     }
 
@@ -239,42 +241,3 @@
     
 }
 
-.competences {
-    &__titre {
-        font-size: 120px;
-        width: 100%;
-        box-sizing: border-box;
-        @media (max-width: 1024px) {
-            font-size: 64px;
-        }
-    }
-}
-
-.imageLink {
-    background-color: $beige;
-    opacity: 50%;
-}
-
-.projets {
-
-    &__titre {
-        font-size: 120px;
-
-        width: 100%;
-        box-sizing: border-box;
-        @media (max-width: 1024px) {
-            font-size: 64px;
-        }
-    }    
-}
-
-.contact {
-    &__titre {
-        font-size: 120px;
-        width: 100%;
-        box-sizing: border-box;
-        @media (max-width: 1024px) {
-            font-size: 64px;
-        }
-    }
-}

@@ -1,3 +1,4 @@
+import Competence from '../../components/Competences'
 import Apropos from '../../components/Apropos'
 import Header from '../../components/Header'
 import weblinklong from '../../assets/weblinklong.svg'
@@ -12,7 +13,15 @@ function Home() {
       </div>
 
       <div className="pagehome__competences">
-        <h1 className="pagehome__competences__titre">Mes compétences˺</h1>
+        <Header />
+        <div className="pagehome__competences__contenu">
+          <h1 className="pagehome__competences__contenu__titre">
+            Mes compétences˺
+          </h1>
+          <div className="pagehome__competences__contenu__bloc">
+            <Competence />
+          </div>
+        </div>
       </div>
       <div className="pagehome__imageLink">
         <img
@@ -22,10 +31,16 @@ function Home() {
         />
       </div>
       <div className="pagehome__projets">
-        <h1 className="pagehome__projets__titre">Projets˺</h1>
+        <Header />
+        <div className="pagehome__projets__contenu">
+          <h1 className="pagehome__projets__contenu__titre">Projets˺</h1>
+        </div>
       </div>
       <div className="pagehome__contact">
-        <h1 className="pagehome__contact__titre">Me contacter˺</h1>
+        <Header />
+        <div className="pagehome__contact__contenu">
+          <h1 className="pagehome__contact__contenu__titre">Me contacter˺</h1>
+        </div>
       </div>
     </div>
   )
